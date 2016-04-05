@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pin_progress_inner_size">28.0dip</dimen>
+    <dimen name="abs__config_prefDialogWidth">320.0dip</dimen>
+    <dimen name="abs__action_bar_default_height">48.0dip</dimen>
+    <dimen name="abs__action_bar_icon_vertical_padding">8.0dip</dimen>
+    <dimen name="abs__action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_bottom_margin">5.0dip</dimen>
+    <dimen name="abs__action_button_min_width">56.0dip</dimen>
+    <dimen name="abs__alert_dialog_title_height">64.0dip</dimen>
+    <item type="dimen" name="abs__dialog_min_width_major">65.0%</item>
+    <item type="dimen" name="abs__dialog_min_width_minor">95.00001%</item>
+    <dimen name="action_button_min_width">56.0dip</dimen>
+    <dimen name="tip_font_size">16.0sp</dimen>
+    <dimen name="page_margin_width">1.0dip</dimen>
+    <dimen name="mediacontroller_button_space">32.0dip</dimen>
+    <dimen name="mediacontroller_buttons_top_margin">2.0dip</dimen>
+    <dimen name="mediacontroller_buttons_bottom_margin">0.0dip</dimen>
+    <dimen name="file_explorer_media_row_height">60.0dip</dimen>
+    <dimen name="file_explorer_media_row_thumb_width">66.0dip</dimen>
+    <dimen name="file_explorer_media_row_thumb_height">50.0dip</dimen>
+    
+    <dimen name="tuner_vert_halfgap">10.0px</dimen>
+    <dimen name="thumb_width">88.0dip</dimen>
+    <dimen name="thumb_height">66.0dip</dimen>
+    <dimen name="notification_padding">8.0dip</dimen>
+    <dimen name="noti_thumb_width">64.0dip</dimen>
+    <dimen name="noti_thumb_height">64.0dip</dimen>
+    <dimen name="video_progress_narrow_height">34.0dip</dimen>
+    <dimen name="bottom_bar_min_height">47.0dip</dimen>
+    
+    <dimen name="tablet_list_width">300dp</dimen>
+    <dimen name="phone_list_height">200dp</dimen>
+
+</resources>

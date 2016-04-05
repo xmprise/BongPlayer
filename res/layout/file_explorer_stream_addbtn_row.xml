@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_row" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxHeight="67.0dip" android:minHeight="67.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip">
+        <ImageView android:id="@id/file_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/url_plus" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/file_explorer_file_icon" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:layout_centerInParent="true" android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/listview_item_title_color_light" android:ellipsize="end" android:id="@id/file_name" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/listview_item_title_shadow_color" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="0.7" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+      <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/select_all" android:background="@drawable/list_selector_dark" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_select_all_default_light" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/bottom_text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/file_explorer_select_all" />
+    </LinearLayout>
+
+    <View android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/delete" android:background="@drawable/list_selector_dark" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_action_delete" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_delete_selector_light" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/bottom_text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_meta_delete" />
+    </LinearLayout>
+    <!-- 
+    <View android:id="@id/view_line" android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/action_more" android:background="@drawable/list_selector_dark" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_action_more" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_hidden_selector_dark" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/bottom_text_color_dark" android:id="@id/tv_action_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_meta_hidden" />
+    </LinearLayout>
+	 -->
+</LinearLayout>

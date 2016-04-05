@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+         
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginRight="7.0dip"
+                android:layout_marginTop="4.0dip"
+                android:text="@string/dialog_add_samba_url_text"
+                android:textColor="#ff777777" />
+
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:gravity="fill_horizontal" android:id="@id/dialog_add_samba_url_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="10.0dip" android:scrollHorizontally="true" android:capitalize="none" android:autoText="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginRight="7.0dip"
+                android:layout_marginTop="4.0dip"
+                android:text="@string/dialog_add_samba_name_text"
+                android:textColor="#ff777777" />
+
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:gravity="fill_horizontal" android:id="@id/dialog_add_samba_name_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="10.0dip" android:scrollHorizontally="true" android:capitalize="none" android:autoText="false" android:inputType="textUri" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginRight="7.0dip"
+                android:layout_marginTop="4.0dip"
+                android:text="@string/dialog_add_samba_pwd_text"
+                android:textColor="#ff777777" />
+
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:gravity="fill_horizontal" android:id="@id/dialog_add_samba_pwd_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="10.0dip" android:scrollHorizontally="true" android:capitalize="none" android:autoText="false" android:inputType="textUri" />
+        </LinearLayout>       
+    </LinearLayout>
+</ScrollView>

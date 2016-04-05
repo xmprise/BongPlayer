@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff4e4d4d" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_centerVertical="true" />
+    <CheckBox android:id="@android:id/checkbox" android:focusable="false" android:clickable="false" android:layout_width="18.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:button="@drawable/checkbox_selector_light" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <SeekBar android:id="@id/seek" android:paddingLeft="15dip" android:paddingRight="30dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_marginRight="10.0dip" android:max="100" style="@style/Widget.ZI.SeekBar" />
+    <TextView android:id="@id/pref_seek_value" android:textStyle="bold" android:textSize="20sp" android:textColor="@color/abs__holo_blue_light" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

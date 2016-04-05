@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/action_preferences" android:id="@id/menu_preferences" android:orderInCategory="92" android:title="@string/menu_preferences" android:showAsAction="never" />
+   <!--  <item android:icon="@drawable/action_quit" android:id="@id/menu_quit" android:orderInCategory="94" android:title="@string/menu_quit" android:showAsAction="never" /> -->
+</menu>

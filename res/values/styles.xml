@@ -1,0 +1,337 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="MediaController_SeekBar">
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+        <item name="android:progressDrawable">@drawable/mediacontroller_seekbar</item>
+        <item name="android:thumb">@drawable/mediacontroller_seekbar_thumb</item>
+    </style>
+
+    <style name="MediaController_Text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="InfoPanel_Container">
+        <item name="android:background">@color/mediacontroller_bg</item>
+    </style>
+    <style name="MediaController_Button">
+        <item name="android:background">@drawable/mediacontroller_btn_bg</item>
+    </style>
+    <style name="MediaController_Container">
+        <item name="android:background">@color/mediacontroller_bg</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="Widget.ZI.SeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:maxHeight">13.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13.0dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16.0dip</item>
+    </style>
+    
+    <style name="Text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="Text.Label" parent="@style/Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+    </style>
+    
+    <style name="Text.CheckBox" parent="@style/Text" />
+    
+    
+    <style name="Theme.ZI.Black" parent="@android:style/Theme">
+        <item name="android:buttonStyle">@style/Widget.ZI.Button</item>
+        <item name="android:checkboxStyle">@style/Widget.ZI.CheckBox</item>
+        <item name="android:seekBarStyle">@style/Widget.ZI.SeekBar</item>
+        <item name="android:spinnerStyle">@style/Widget.ZI.Spinner</item>
+    </style>
+    <style name="Theme.ZI.Black.NoTitleBar.Fullscreen" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:buttonStyle">@style/Widget.ZI.Button</item>
+        <item name="android:checkboxStyle">@style/Widget.ZI.CheckBox</item>
+        <item name="android:seekBarStyle">@style/Widget.ZI.SeekBar</item>
+        <item name="android:spinnerStyle">@style/Widget.ZI.Spinner</item>
+    </style>
+    <style name="Theme.ZI.Dialog.Translucent" parent="@style/Theme.ZI.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    
+    <style name="Widget.ZI.Spinner" parent="@android:style/Widget.Spinner">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/spinner_background_holo_dark</item>
+    </style>
+    <style name="Widget.ZI.CheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/btn_check_holo_dark</item>
+    </style>
+    <style name="Widget.ZI.SeekBar.Flat" parent="@style/Widget.ZI.SeekBar">
+        <item name="android:padding">0.0dip</item>
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:thumbOffset">0.0dip</item>
+    </style>
+    <style name="Widget.ZI.SeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:maxHeight">13.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13.0dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16.0dip</item>
+    </style>
+    <style name="Widget.ZI.Button" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/primary_text_holo_dark</item>
+        <item name="android:background">@drawable/btn_default_holo_dark</item>
+        <item name="android:minWidth">64.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+
+    <style name="Theme.Sherlock.ForceOverflow" parent="@style/Theme.Sherlock">
+        <item name="absForceOverflow">true</item>
+    </style>
+    <style name="Theme.Sherlock.Light.ForceOverflow" parent="@style/Theme.Sherlock.Light">
+        <item name="absForceOverflow">true</item>
+    </style>
+    
+    <style name="Theme.vplayer_light" parent="@style/Theme.Sherlock.Light.ForceOverflow">
+        <item name="android:panelBackground">@drawable/menu_hardkey_panel_vplayer</item>
+        <item name="android:dropDownListViewStyle">@style/vplayer_DropDownListView</item>
+        <item name="android:actionBarStyle">@style/vplayer_solid_ActionBar</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:actionDropDownStyle">@style/vplayer_DropDownNav</item>
+        <item name="android:actionBarTabStyle">@style/vplayer_ActionBarTabStyle</item>
+        <item name="android:actionBarTabBarStyle">@style/vplayer_ActionBarTabBarStyle</item>
+        <item name="android:popupMenuStyle">@style/vplayer_PopupMenu</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_vplayer</item>
+        <item name="actionBarTabStyle">@style/vplayer_ActionBarTabStyle</item>
+        <item name="actionBarTabBarStyle">@style/vplayer_ActionBarTabBarStyle</item>
+        <item name="actionBarStyle">@style/vplayer_solid_ActionBar</item>
+        <item name="actionBarItemBackground">@drawable/selectable_background_vplayer</item>
+        <item name="actionDropDownStyle">@style/vplayer_DropDownNav</item>
+        <item name="dropDownListViewStyle">@style/vplayer_DropDownListView</item>
+        <item name="popupMenuStyle">@style/vplayer_PopupMenu</item>
+        <item name="displayOptions">showHome|homeAsUp|showTitle</item>
+    </style>
+    <style name="Theme.Light" parent="@style/Theme.vplayer_light">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="file_folder">@drawable/file_folder_light</item>
+        <item name="checkbox_selector">@drawable/checkbox_selector_light</item>
+        <item name="pop_bg_no_bottom_edit">@drawable/pop_bg_no_bottom_edit_light</item>
+        <item name="action_select_all_default">@drawable/action_select_all_default_light</item>
+        <item name="action_delete_selector">@drawable/action_delete_selector_light</item>
+        <item name="action_hidden_selector">@drawable/action_hidden_selector_light</item>
+        <item name="action_edit">@drawable/action_edit_light</item>
+        <item name="action_add_group">@drawable/action_add_group_default_light</item>
+        <item name="file_url">@drawable/file_url_light</item>
+        <item name="listview_item_title_color">@color/listview_item_title_color_light</item>
+        <item name="listview_item_played_color">@color/listview_item_title_played_color_light</item>
+        <item name="bottom_text_color">@color/bottom_text_color_light</item>
+        <item name="ListViewStyle">@style/ListViewStyleLight</item>
+    </style>
+     <style name="Theme.vplayer_dark" parent="@style/Theme.Sherlock.ForceOverflow">
+        <item name="android:panelBackground">@drawable/menu_hardkey_panel_vplayer_dark</item>
+        <item name="android:dropDownListViewStyle">@style/vplayer_dark_DropDownListView</item>
+        <item name="android:actionBarStyle">@style/vplayer_dark_solid_ActionBar</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:actionDropDownStyle">@style/vplayer_dark_DropDownNav</item>
+        <item name="android:actionBarTabStyle">@style/vplayer_dark_ActionBarTabStyle</item>
+        <item name="android:actionBarTabBarStyle">@style/vplayer_dark_ActionBarTabBarStyle</item>
+        <item name="android:popupMenuStyle">@style/vplayer_dark_PopupMenu</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_vplayer_dark</item>
+        <item name="actionBarTabStyle">@style/vplayer_dark_ActionBarTabStyle</item>
+        <item name="actionBarTabBarStyle">@style/vplayer_dark_ActionBarTabBarStyle</item>
+        <item name="actionBarStyle">@style/vplayer_dark_solid_ActionBar</item>
+        <item name="actionBarItemBackground">@drawable/selectable_background_vplayer_dark</item>
+        <item name="actionDropDownStyle">@style/vplayer_dark_DropDownNav</item>
+        <item name="dropDownListViewStyle">@style/vplayer_dark_DropDownListView</item>
+        <item name="popupMenuStyle">@style/vplayer_dark_PopupMenu</item>
+        <item name="displayOptions">showHome|homeAsUp|showTitle</item>
+    </style>
+    <style name="Theme.Dark" parent="@style/Theme.vplayer_dark">
+        <item name="android:windowBackground">@android:color/background_dark</item>
+        <item name="file_folder">@drawable/file_folder_dark</item>
+        <item name="checkbox_selector">@drawable/checkbox_selector_dark</item>
+        <item name="pop_bg_no_bottom_edit">@drawable/pop_bg_no_bottom_edit_dark</item>
+        <item name="action_select_all_default">@drawable/action_select_all_default_dark</item>
+        <item name="action_delete_selector">@drawable/action_delete_selector_dark</item>
+        <item name="action_hidden_selector">@drawable/action_hidden_selector_dark</item>
+        <item name="action_edit">@drawable/action_edit_dark</item>
+        <item name="action_add_group">@drawable/action_add_group_default_dark</item>
+        <item name="file_url">@drawable/file_url_dark</item>
+        <item name="listview_item_title_color">@color/listview_item_title_color_dark</item>
+        <item name="listview_item_played_color">@color/listview_item_title_played_color_dark</item>
+        <item name="bottom_text_color">@color/bottom_text_color_dark</item>
+        <item name="ListViewStyle">@style/ListViewStyleDark</item>
+    </style>
+    <style name="vplayer_solid_ActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="android:progressBarStyle">@style/vplayer_ProgressBar</item>
+        <item name="android:background">@drawable/ab_transparent_vplayer</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_vplayer</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_vplayer</item>
+        <item name="background">@drawable/ab_transparent_vplayer</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_vplayer</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_vplayer</item>
+        <item name="progressBarStyle">@style/vplayer_ProgressBar</item>
+    </style>
+    
+    <style name="vplayer_ActionBarTabBarStyle" parent="@style/Widget.Sherlock.Light.ActionBar.TabBar">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="vplayer_ActionBarTabStyle" parent="@style/Widget.Sherlock.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_vplayer</item>
+        <item name="background">@drawable/tab_indicator_ab_vplayer</item>
+    </style>
+    <style name="vplayer_DropDownNav" parent="@style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_vplayer</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_vplayer</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_vplayer</item>
+        <item name="background">@drawable/spinner_background_ab_vplayer</item>
+    </style>
+    <style name="vplayer_DropDownListView" parent="@style/Widget.Sherlock.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_vplayer</item>
+    </style>
+    <style name="vplayer_PopupMenu" parent="@style/Widget.Sherlock.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_vplayer</item>
+    </style>
+    
+    <style name="ListViewStyleLight" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector_dark</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@color/listview_divider_light</item>
+        <item name="android:dividerHeight">1.0px</item>
+    </style>
+    <style name="vplayer_dark_solid_ActionBar" parent="@style/Widget.Sherlock.ActionBar.Solid">
+        <item name="android:progressBarStyle">@style/vplayer_dark_ProgressBar</item>
+        <item name="android:background">@drawable/ab_transparent_vplayer_dark</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_vplayer_dark</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_vplayer_dark</item>
+        <item name="background">@drawable/ab_transparent_vplayer_dark</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_vplayer_dark</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_vplayer_dark</item>
+        <item name="progressBarStyle">@style/vplayer_dark_ProgressBar</item>
+    </style>
+    <style name="vplayer_dark_ActionBarTabBarStyle" parent="@style/Widget.Sherlock.ActionBar.TabBar">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="vplayer_dark_ActionBarTabStyle" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_vplayer_dark</item>
+        <item name="background">@drawable/tab_indicator_ab_vplayer_dark</item>
+    </style>
+    <style name="vplayer_dark_DropDownNav" parent="@style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_vplayer_dark</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_vplayer_dark</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_vplayer_dark</item>
+        <item name="background">@drawable/spinner_background_ab_vplayer_dark</item>
+    </style>
+    <style name="vplayer_dark_DropDownListView" parent="@style/Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_vplayer_dark</item>
+    </style>
+    <style name="vplayer_dark_PopupMenu" parent="@style/Widget.Sherlock.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_vplayer_dark</item>
+    </style>
+    <style name="ListViewStyleDark" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector_dark</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@color/listview_divider_dark</item>
+        <item name="android:dividerHeight">1.0px</item>
+    </style>
+    <style name="vplayer_ProgressBar" parent="@style/Widget.Sherlock.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_vplayer</item>
+    </style>
+    <style name="vplayer_dark_ProgressBar" parent="@style/Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_vplayer_dark</item>
+    </style>
+    
+    <style name="ListDialog" parent="@style/MenuDialog">
+        <item name="android:windowBackground">@android:drawable/dialog_holo_light_frame</item>
+    </style>
+    <style name="MenuDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="Animations" />
+    <style name="Animations.PopDownMenu" parent="@style/Animations" />
+    <style name="Animations.PopDownMenu.Center" parent="@style/Animations.PopDownMenu">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+    <style name="Animations.PopDownMenu.Left" parent="@style/Animations.PopDownMenu">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+    <style name="Animations.PopDownMenu.Right" parent="@style/Animations.PopDownMenu">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+    <style name="Animations.PopDownMenu.Reflect" parent="@style/Animations.PopDownMenu">
+        <item name="android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="android:windowExitAnimation">@anim/quickaction_disappear</item>
+    </style>
+    <style name="Animations.PopUpMenu" parent="@style/Animations" />
+    <style name="Animations.PopUpMenu.Center" parent="@style/Animations.PopUpMenu">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    <style name="Animations.PopUpMenu.Left" parent="@style/Animations.PopUpMenu">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+    <style name="Animations.PopUpMenu.Right" parent="@style/Animations.PopUpMenu">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+    <style name="Animations.PopUpMenu.Reflect" parent="@style/Animations.PopUpMenu">
+        <item name="android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="android:windowExitAnimation">@anim/quickaction_disappear</item>
+    </style>
+    
+    <style name="PinProgressButton">
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+    </style>
+    <style name="Theme.HomeAsUp" parent="@style/Theme.Sherlock.Light">
+        <item name="android:displayOptions">homeAsUp</item>
+        <item name="displayOptions">homeAsUp</item>
+    </style>
+    
+     <style name="tuner_tab_appearance" parent="@android:style/TextAppearance.Theme.Dialog" />
+
+     
+</resources>

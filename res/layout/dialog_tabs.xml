@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.bongplayer2.dialog.DynamicLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="560.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/tabs_container" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/tab_video" android:background="@drawable/tab_bg" android:layout_width="104.0dip" android:layout_height="44.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/tab_video_image" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_video" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_video" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/tab_audio" android:background="@drawable/tab_bg" android:layout_width="104.0dip" android:layout_height="44.0dip" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/tab_video">
+                <ImageView android:layout_gravity="center" android:id="@id/tab_audio_image" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_audio" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_audio" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/tab_subtitle" android:background="@drawable/tab_bg" android:layout_width="104.0dip" android:layout_height="44.0dip" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/tab_audio">
+                <ImageView android:layout_gravity="center" android:id="@id/tab_subtitle_image" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_subtitle" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_text" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tabs_container" />
+    </RelativeLayout>
+</com.example.bongplayer2.dialog.DynamicLinearLayout>

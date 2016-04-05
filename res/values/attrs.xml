@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="pinned" format="boolean" />
+    <attr name="progress" format="integer" />
+    <attr name="max" format="integer" />
+    <attr name="circleColor" format="color" />
+    <attr name="progressColor" format="color" />
+    <attr name="file_folder" format="reference|color" />
+    <attr name="checkbox_selector" format="reference|color" />
+    <attr name="pop_bg_no_bottom_edit" format="reference|color" />
+    <attr name="action_select_all_default" format="reference|color" />
+    <attr name="action_delete_selector" format="reference|color" />
+    <attr name="action_hidden_selector" format="reference|color" />
+    <attr name="action_edit" format="reference|color" />
+    <attr name="action_add_group" format="reference|color" />
+    <attr name="file_url" format="reference|color" />
+    <attr name="listview_item_title_color" format="reference|color" />
+    <attr name="listview_item_played_color" format="reference|color" />
+    <attr name="bottom_text_color" format="reference|color" />
+    <attr name="ListViewStyle" format="reference|color" />
+    <attr name="absForceOverflow" format="boolean" />
+</resources>

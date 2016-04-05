@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bongplayer2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application android:theme="@style/Theme.Sherlock.Light" 
+        android:label="@string/app_name" 
+        android:icon="@mipmap/icon_mangoplayer" 
+        android:allowBackup="false" 
+        android:logo="@mipmap/icon_mangoplayer">
+        <activity
+            android:name="com.example.bongplayer2.Intro"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.bongplayer2.BongPlayer_Main"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.example.bongplayer2.BongPlayerExplorer"
+            android:label="@string/title_activity_bong_player_explorer"
+            android:theme="@style/Theme.Sherlock.Light" 
+            android:icon="@mipmap/icon_mangoplayer"
+            android:allowBackup="false" android:logo="@mipmap/icon_mangoplayer">
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.bongplayer2.MediaDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_media_detail"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bongplayer2.BongPlayerExplorer" />
+        </activity>
+        <activity android:name="com.example.bongplayer2.InitActivity" >
+        </activity>
+        <activity
+            android:name="com.example.bongplayer2.VideoViewDemo"
+            android:label="@string/title_activity_video_view_demo" >
+        </activity>
+        <activity
+            android:name="com.example.bongplayer2.VideoActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_video" 
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+	    <activity android:theme="@style/Theme.HomeAsUp" android:name="com.example.bongplayer2.PreferenceActivity" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="me.abitno.media.explorer.FileExplorerContainer" />
+        </activity>
+        
+	    
+        <activity
+            android:name="com.google.code.androidsmb.WiFiDirectActivity"
+            android:label="@string/app_name" android:launchMode="singleTask">
+        </activity>
+        
+        <activity android:name="com.google.code.androidsmb.ListFiles"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme">
+        </activity>
+
+        <provider android:name="com.yixia.zi.preference.PreferenceProvider" android:exported="false" android:authorities="com.yixia.zi.preference.PreferenceProvider" />
+	    <service android:name="com.google.code.androidsmb.AndroidSMBService"/>
+        <service android:enabled="true" android:name="com.google.code.androidsmb.FileTransferService" />
+    </application>
+
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <permission android:label="@string/permission_receive_messages_label" android:name="io.vov.vitamio.permission.RECEIVE_MESSAGES" android:protectionLevel="normal" android:permissionGroup="io.vov.vitamio.permission-group.TOOLS" android:description="@string/permission_receive_messages_description" />
+    <permission android:label="@string/permission_write_providers_label" android:name="io.vov.vitamio.permission.WRITE_PROVIDERS" android:protectionLevel="normal" android:permissionGroup="io.vov.vitamio.permission-group.TOOLS" android:description="@string/permission_write_providers_description" />
+    <permission-group android:label="@string/permission_group_tools_label" android:name="io.vov.vitamio.permission-group.TOOLS" android:description="@string/permission_group_tools_description" />
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="io.vov.vitamio.permission.RECEIVE_MESSAGES" />
+    <uses-permission android:name="io.vov.vitamio.permission.WRITE_PROVIDERS" />
+    
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    
+ 	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    
+    
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+
+</manifest>

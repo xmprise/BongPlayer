@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+        <TableRow android:id="@id/dialog_pref_screen_size" android:layout_marginTop="@dimen/tuner_vert_halfgap" android:layout_marginBottom="@dimen/tuner_vert_halfgap">
+            <TextView android:textAppearance="?android:textAppearance" android:gravity="center_vertical" android:layout_height="fill_parent" android:text="@string/tune_screen_size_title" />
+            <com.example.bongplayer2.widget.Spinner2 android:entries="@array/screen_size_titles" android:id="@id/orientation" android:layout_marginLeft="8.0dip" android:prompt="@string/tune_screen_size_title" />
+        </TableRow>
+         
+        <TableRow android:id="@id/dialog_pref_screen_ratio" android:layout_marginTop="@dimen/tuner_vert_halfgap" android:layout_marginBottom="@dimen/tuner_vert_halfgap">
+            <TextView android:textAppearance="?android:textAppearance" android:gravity="center_vertical" android:layout_height="fill_parent" android:text="@string/tune_screen_ratio_title" />
+            <com.example.bongplayer2.widget.Spinner2 android:entries="@array/aspect_ratio_titles" android:id="@id/fullscreen" android:layout_marginLeft="8.0dip" android:prompt="@string/tune_screen_ratio_title" />
+        </TableRow>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="@dimen/tuner_vert_halfgap" android:layout_marginBottom="@dimen/tuner_vert_halfgap">
+            <TextView android:id="@id/brightness" android:text="@string/pref_tit_brightness" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <!-- <CheckBox android:textAppearance="?android:textAppearance" android:id="@id/brightnessEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tune_enable_brightness" /> -->
+            <SeekBar android:id="@id/brightness" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Widget.ZI.SeekBar" android:layout_marginLeft="15.0dip"/>
+            <TextView android:gravity="left|center" android:id="@id/brightnessText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="@dimen/tuner_vert_halfgap">
+            <CheckBox android:id="@id/dialog_pref_showFPSCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/showFPSCheckBoxText" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/dialog_pref_playContinueCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/playContinueCheckBoxText" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="@dimen/tuner_vert_halfgap" android:layout_marginBottom="@dimen/tuner_vert_halfgap">
+            <TextView android:id="@id/dialog_pref_skip_interval" android:text="@string/pref_tit_micro_seek_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <!-- <CheckBox android:textAppearance="?android:textAppearance" android:id="@id/brightnessEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tune_enable_brightness" /> -->
+            <SeekBar android:id="@id/brightness" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Widget.ZI.SeekBar" android:layout_marginLeft="15.0dip"/>
+            <TextView android:gravity="left|center" android:id="@id/brightnessText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--
+        <TableLayout android:layout_marginBottom="@dimen/tuner_vert_halfgap" android:stretchColumns="3" android:shrinkColumns="*">
+            <TableRow android:gravity="center_vertical">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="(" />
+                <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/osd_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/place_at_the_bottom" android:layout_weight="1.0" />
+                <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/osd_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/tune_subtitle_background" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text=")" />
+            </TableRow>
+        </TableLayout>
+        
+        <CheckBox android:id="@id/battery_clock_in_title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/battery_clock_in_title_bar" />
+        <CheckBox android:id="@id/showLeftTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_left_time" />
+        <CheckBox android:id="@id/alwaysShowStatusBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar" />
+        <CheckBox android:id="@id/softButtons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_hide_soft_buttons" />
+        <CheckBox android:id="@id/keepScreenOn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keep_screen_on" />
+        -->
+    </TableLayout>
+</ScrollView>
