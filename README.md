@@ -1,2 +1,5 @@
 # BongPlayer
-무인코딩 동영상 플레이어 + WiFi Direct Movie Streaming
+
+Video player with encoder + WiFi Direct Movie Streaming
+
+※ This program was created in 2013.
